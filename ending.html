@@ -1,0 +1,112 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Level 22 Unlocked ♡</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div id="confetti"></div>
+
+<main class="page ending-page">
+
+    <div class="level-card">
+
+        <div class="crown">
+            👑
+        </div>
+
+        <p class="tiny">
+            CONGRATULATIONS!
+        </p>
+
+        <h1>
+            LEVEL 22<br>
+            <span>UNLOCKED</span>
+        </h1>
+
+        <div class="stats">
+
+            <div>
+                <strong>22</strong>
+                <small>years old</small>
+            </div>
+
+            <div>
+                <strong>∞</strong>
+                <small>cuteness</small>
+            </div>
+
+            <div>
+                <strong>100%</strong>
+                <small>my fav</small>
+            </div>
+
+        </div>
+
+        <div class="goofy-list">
+
+            <p>❌ Mature</p>
+            <p>❌ Responsible</p>
+            <p>❌ Serious</p>
+
+            <hr>
+
+            <p>✅ Cute</p>
+            <p>✅ Goofy</p>
+            <p>✅ Still my favourite hooman</p>
+
+        </div>
+
+        <h2>
+            Happy Birthday! 🐼❤️
+        </h2>
+
+        <p class="final-line">
+            Now go eat some chocolate cake. 🍫
+        </p>
+
+        <button onclick="location.href='index.html'">
+            replay the surprise ♡
+        </button>
+
+    </div>
+
+</main>
+
+<script>
+
+const confetti = document.getElementById("confetti");
+
+const symbols = ["♡", "✦", "✧", "♥"];
+
+for (let i = 0; i < 45; i++) {
+
+    const piece = document.createElement("span");
+
+    piece.className = "confetti";
+
+    piece.textContent =
+        symbols[Math.floor(Math.random() * symbols.length)];
+
+    piece.style.left =
+        Math.random() * 100 + "%";
+
+    piece.style.animationDelay =
+        Math.random() * 3 + "s";
+
+    piece.style.animationDuration =
+        3 + Math.random() * 3 + "s";
+
+    confetti.appendChild(piece);
+}
+
+</script>
+
+</body>
+</html>
+

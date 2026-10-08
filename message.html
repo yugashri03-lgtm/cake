@@ -1,0 +1,131 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Little Message ♡</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="floating f1">♡</div>
+<div class="floating f2">✦</div>
+<div class="floating f3">♡</div>
+
+<main class="page message-page">
+
+    <div class="envelope" id="envelope">
+
+        <div class="envelope-top"></div>
+
+        <div class="envelope-body">
+
+            <div class="letter-icon">
+                ♡
+            </div>
+
+            <p>
+                for you
+            </p>
+
+        </div>
+
+    </div>
+
+    <p class="tiny" id="clickText">
+        click the little letter...
+    </p>
+
+    <div class="letter" id="letter">
+
+        <h2>
+            To my favourite hooman ♡
+        </h2>
+
+        <p>
+
+            Happy 22nd birthday, Draveed. 🥺❤️
+
+            <br><br>
+
+            I hope this little silly website
+            made you smile, because you deserve
+            all the cute and happy things
+            in the world.
+
+            <br><br>
+
+            Thank you for being you —
+            goofy, annoying, lovable and
+            somehow still my favourite person.
+
+            <br><br>
+
+            I hope this new chapter brings you
+            happiness, success, peace, lots of
+            laughter and everything you've been
+            wishing for.
+
+            <br><br>
+
+            And yes...
+
+            <br>
+
+            you're officially 22 now.
+
+            <br>
+
+            Please act your age.
+
+            <br>
+
+            Actually, don't.
+
+            <br>
+
+            I like your goofy version. 🤭
+
+            <br><br>
+
+            Happy birthday, my favourite hooman. 🐼❤️
+
+        </p>
+
+        <button onclick="location.href='ending.html'">
+            one last thing... 👀
+        </button>
+
+    </div>
+
+</main>
+
+<script>
+
+const envelope =
+    document.getElementById("envelope");
+
+const letter =
+    document.getElementById("letter");
+
+const clickText =
+    document.getElementById("clickText");
+
+envelope.addEventListener("click", function () {
+
+    envelope.classList.add("opened");
+
+    letter.classList.add("show");
+
+    clickText.textContent =
+        "a little message for you ♡";
+
+});
+
+</script>
+
+</body>
+</html>
+

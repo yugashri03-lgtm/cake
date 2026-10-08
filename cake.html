@@ -1,0 +1,131 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday ♡</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div id="confetti"></div>
+
+<div class="floating f1">♡</div>
+<div class="floating f2">✦</div>
+<div class="floating f3">♡</div>
+<div class="floating f4">✧</div>
+
+<main class="page cake-page">
+
+    <p class="tiny">
+        and now...
+    </p>
+
+    <h1 class="birthday-heading">
+        HAPPY BIRTHDAY
+    </h1>
+
+    <div class="truffle-cake">
+
+        <div class="cake-glow"></div>
+
+        <div class="top-layer">
+
+            <div class="chocolate-drip d1"></div>
+            <div class="chocolate-drip d2"></div>
+            <div class="chocolate-drip d3"></div>
+            <div class="chocolate-drip d4"></div>
+            <div class="chocolate-drip d5"></div>
+
+            <div class="strawberry s1">
+                <div class="leaf"></div>
+            </div>
+
+            <div class="strawberry s2">
+                <div class="leaf"></div>
+            </div>
+
+            <div class="truffle t1"></div>
+            <div class="truffle t2"></div>
+            <div class="truffle t3"></div>
+
+        </div>
+
+        <div class="cake-middle">
+
+            <div class="cream-line"></div>
+
+            <div class="chocolate-shavings">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+        </div>
+
+        <div class="cake-bottom">
+
+            <div class="cake-decoration dec1"></div>
+            <div class="cake-decoration dec2"></div>
+            <div class="cake-decoration dec3"></div>
+
+        </div>
+
+        <div class="cake-plate"></div>
+
+    </div>
+
+    <h2 class="fav-hooman">
+        MY FAV HOOMAN! 🐼
+    </h2>
+
+    <p class="cheers">
+        Cheers to 22! ✨
+    </p>
+
+    <p class="cake-subtext">
+        another year of being cute, goofy & slightly annoying ♡
+    </p>
+
+    <button onclick="location.href='message.html'">
+        there's more... 👀
+    </button>
+
+</main>
+
+<script>
+
+const confetti = document.getElementById("confetti");
+
+const symbols = ["♡", "✦", "✧", "♥"];
+
+for (let i = 0; i < 45; i++) {
+
+    const piece = document.createElement("span");
+
+    piece.className = "confetti";
+
+    piece.textContent =
+        symbols[Math.floor(Math.random() * symbols.length)];
+
+    piece.style.left =
+        Math.random() * 100 + "%";
+
+    piece.style.animationDelay =
+        Math.random() * 3 + "s";
+
+    piece.style.animationDuration =
+        3 + Math.random() * 3 + "s";
+
+    confetti.appendChild(piece);
+}
+
+</script>
+
+</body>
+</html>
+

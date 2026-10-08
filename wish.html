@@ -1,0 +1,142 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Make a Wish ♡</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="floating f1">♡</div>
+<div class="floating f2">✦</div>
+<div class="floating f3">♡</div>
+
+<main class="page">
+
+    <p class="tiny">
+        okay hooman... important mission 🫡
+    </p>
+
+    <h1 class="section-title">
+        Make a wish ✨
+    </h1>
+
+    <p class="instruction">
+        Watch carefully...
+    </p>
+
+    <div class="birthday-scene">
+
+        <div class="panda small-panda">
+
+            <div class="ear ear-left"></div>
+            <div class="ear ear-right"></div>
+
+            <div class="panda-head">
+
+                <div class="eye eye-left">
+                    <span></span>
+                </div>
+
+                <div class="eye eye-right">
+                    <span></span>
+                </div>
+
+                <div class="blush blush-left"></div>
+                <div class="blush blush-right"></div>
+
+                <div class="nose"></div>
+                <div class="mouth"></div>
+
+            </div>
+
+            <div class="panda-body"></div>
+
+            <div class="paw paw-left"></div>
+            <div class="paw paw-right"></div>
+
+        </div>
+
+        <div class="mini-cake">
+
+            <div class="cake-top">
+
+                <div class="drip drip1"></div>
+                <div class="drip drip2"></div>
+                <div class="drip drip3"></div>
+
+            </div>
+
+            <div class="cake-layer"></div>
+
+            <div class="cake-cream cream1"></div>
+            <div class="cake-cream cream2"></div>
+
+            <div class="candle-stick">
+
+                <div
+                    class="candle-flame"
+                    id="candleFlame">
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div id="countdown" class="countdown">
+        5
+    </div>
+
+    <p id="wishText" class="wish-text">
+        Make a wish... 🥺✨
+    </p>
+
+</main>
+
+<script>
+
+let number = 5;
+
+const countdown = document.getElementById("countdown");
+const wishText = document.getElementById("wishText");
+const flame = document.getElementById("candleFlame");
+
+const timer = setInterval(function () {
+
+    number = number - 1;
+
+    if (number > 0) {
+        countdown.textContent = number;
+    }
+
+    if (number === 0) {
+
+        clearInterval(timer);
+
+        countdown.textContent = "💨";
+
+        wishText.textContent =
+            "POOF! Candle blown! 🐼💨";
+
+        flame.style.opacity = "0";
+        flame.style.transform = "scale(0)";
+
+        setTimeout(function () {
+
+            window.location.href = "cake.html";
+
+        }, 1500);
+    }
+
+}, 1000);
+
+</script>
+
+</body>
+</html>
+
